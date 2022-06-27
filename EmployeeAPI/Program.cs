@@ -22,5 +22,9 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+//TODO???
+app.MapControllerRoute(name: "default", pattern: "{controller=Employee}/{id?}");
 
 app.Run();
+
+public partial class Program { }
